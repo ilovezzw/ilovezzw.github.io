@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0043)http://www.yyyweb.com/demo/parallax-slider/ -->
+<html class="cufon-active cufon-ready"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" type="text/javascript" src="./Parallax Slider - 视差滚动滑块_files/ca-pub-0608155192548477.js"></script><script src="./Parallax Slider - 视差滚动滑块_files/hm.js"></script>
+        <title>Parallax Slider - 视差滚动滑块</title>
+        
+        <meta name="description" content="Parallax Slider with jQuery">
+        <meta name="keywords" content="parallax, jquery, slider, slideshow, rotation, perspective">
+		<link rel="shortcut icon" href="http://www.yyyweb.com/demo/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="./Parallax Slider - 视差滚动滑块_files/style.css">
+        <link rel="stylesheet" href="http://www.yyyweb.com/demo/common/init.css">
+		<script src="./Parallax Slider - 视差滚动滑块_files/cufon-yui.js" type="text/javascript"></script><style type="text/css">cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}</style>
+		<script src="./Parallax Slider - 视差滚动滑块_files/ChunkFive_400.font.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			Cufon.replace('h1',{ textShadow: '1px 1px #000'});
+			Cufon.replace('h2',{ textShadow: '1px 1px #000'});
+			Cufon.replace('.footer',{ textShadow: '1px 1px #000'});
+			Cufon.replace('.pxs_loading',{ textShadow: '1px 1px #000'});
+		</script>
+    <script src="./Parallax Slider - 视差滚动滑块_files/share.js"></script><link rel="stylesheet" href="http://bdimg.share.baidu.com/static/api/css/slide_share.css?v=9c50d088.css"><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+    <body>
+		<div class="wrapper">
+			<!-- <h1>Parallax Slider </h1> -->
+		</div>
+
+		<div id="pxs_container" class="pxs_container" style="margin-top:160px">
+			<div class="pxs_bg">
+				<div class="pxs_bg1" style="width: 8640px; left: -360px;"></div>
+				<div class="pxs_bg2" style="width: 8640px; left: -720px;"></div>
+				<div class="pxs_bg3" style="width: 8640px; left: -1440px;"></div>
+			</div>
+			<div class="pxs_loading" style="display: none;"><cufon class="cufon cufon-canvas" alt="Loading " style="width: 86px; height: 20px;"><canvas width="103" height="22" style="width: 103px; height: 22px; top: -1px; left: 0px;"></canvas><cufontext>Loading </cufontext></cufon><cufon class="cufon cufon-canvas" alt="images..." style="width: 87px; height: 20px;"><canvas width="104" height="22" style="width: 104px; height: 22px; top: -1px; left: 0px;"></canvas><cufontext>images...</cufontext></cufon></div>
+			<div class="pxs_slider_wrapper" style="display: block;">
+				<ul class="pxs_slider" style="width: 8640px; left: -2880px;">
+					<li style="width: 1440px;"><img src="./Parallax Slider - 视差滚动滑块_files/1.jpg" alt="First Image"></li>
+					<li style="width: 1440px;"><img src="./Parallax Slider - 视差滚动滑块_files/2.jpg" alt="Second Image"></li>
+					<li style="width: 1440px;"><img src="./Parallax Slider - 视差滚动滑块_files/3.jpg" alt="Third Image"></li>
+					<li style="width: 1440px;"><img src="./Parallax Slider - 视差滚动滑块_files/4.jpg" alt="Forth Image"></li>
+					<li style="width: 1440px;"><img src="./Parallax Slider - 视差滚动滑块_files/5.jpg" alt="Fifth Image"></li>
+					<li style="width: 1440px;"><img src="./Parallax Slider - 视差滚动滑块_files/6.jpg" alt="Sixth Image"></li>
+				</ul>
+				<div class="pxs_navigation">
+					<span class="pxs_next" style="right: 343px;"></span>
+					<span class="pxs_prev" style="left: 343px;"></span>
+				</div>
+				<ul class="pxs_thumbnails" style="width: 760px; margin-left: -380px;">
+					<li class="" style="left: 62.0714285714286px; transform: rotate(-19deg);"><img src="./Parallax Slider - 视差滚动滑块_files/1(1).jpg" alt="First Image"></li>
+					<li class="" style="left: 170.642857142857px; transform: rotate(-15deg);"><img src="./Parallax Slider - 视差滚动滑块_files/2(1).jpg" alt="Second Image"></li>
+					<li class="selected" style="left: 279.214285714286px; transform: rotate(-11deg);"><img src="./Parallax Slider - 视差滚动滑块_files/3(1).jpg" alt="Third Image"></li>
+					<li class="" style="left: 387.785714285714px; transform: rotate(20deg);"><img src="./Parallax Slider - 视差滚动滑块_files/4(1).jpg" alt="Forth Image"></li>
+					<li class="" style="left: 496.357142857143px; transform: rotate(-2deg); top: 0px;"><img src="./Parallax Slider - 视差滚动滑块_files/5(1).jpg" alt="Fifth Image"></li>
+					<li class="" style="left: 604.928571428571px; transform: rotate(9deg);"><img src="./Parallax Slider - 视差滚动滑块_files/6(1).jpg" alt="Sixth Image"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-banner" style="width:728px; margin:30px auto"><ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-0608155192548477" data-ad-slot="8305246055" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;"></iframe></ins></ins></ins></div>
+		<!-- The JavaScript -->
+		<script type="text/javascript" src="./Parallax Slider - 视差滚动滑块_files/jquery.min.js"></script>
+		<script type="text/javascript" src="./Parallax Slider - 视差滚动滑块_files/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+			(function($) {
+				$.fn.parallaxSlider = function(options) {
+					var opts = $.extend({}, $.fn.parallaxSlider.defaults, options);
+					return this.each(function() {
+						var $pxs_container 	= $(this),
+						o 				= $.meta ? $.extend({}, opts, $pxs_container.data()) : opts;
+						
+						//the main slider
+						var $pxs_slider		= $('.pxs_slider',$pxs_container),
+						//the elements in the slider
+						$elems			= $pxs_slider.children(),
+						//total number of elements
+						total_elems		= $elems.length,
+						//the navigation buttons
+						$pxs_next		= $('.pxs_next',$pxs_container),
+						$pxs_prev		= $('.pxs_prev',$pxs_container),
+						//the bg images
+						$pxs_bg1		= $('.pxs_bg1',$pxs_container),
+						$pxs_bg2		= $('.pxs_bg2',$pxs_container),
+						$pxs_bg3		= $('.pxs_bg3',$pxs_container),
+						//current image
+						current			= 0,
+						//the thumbs container
+						$pxs_thumbnails = $('.pxs_thumbnails',$pxs_container),
+						//the thumbs
+						$thumbs			= $pxs_thumbnails.children(),
+						//the interval for the autoplay mode
+						slideshow,
+						//the loading image
+						$pxs_loading	= $('.pxs_loading',$pxs_container),
+						$pxs_slider_wrapper = $('.pxs_slider_wrapper',$pxs_container);
+							
+						//first preload all the images
+						var loaded		= 0,
+						$images		= $pxs_slider_wrapper.find('img');
+							
+						$images.each(function(){
+							var $img	= $(this);
+							$('<img/>').load(function(){
+								++loaded;
+								if(loaded	== total_elems*2){
+									$pxs_loading.hide();
+									$pxs_slider_wrapper.show();
+										
+									//one images width (assuming all images have the same sizes)
+									var one_image_w		= $pxs_slider.find('img:first').width();
+							
+									/*
+									need to set width of the slider,
+									of each one of its elements, and of the
+									navigation buttons
+									 */
+									setWidths($pxs_slider,
+									$elems,
+									total_elems,
+									$pxs_bg1,
+									$pxs_bg2,
+									$pxs_bg3,
+									one_image_w,
+									$pxs_next,
+									$pxs_prev);
+							
+									/*
+										set the width of the thumbs
+										and spread them evenly
+									 */
+									$pxs_thumbnails.css({
+										'width'			: one_image_w + 'px',
+										'margin-left' 	: -one_image_w/2 + 'px'
+									});
+									var spaces	= one_image_w/(total_elems+1);
+									$thumbs.each(function(i){
+										var $this 	= $(this);
+										var left	= spaces*(i+1) - $this.width()/2;
+										$this.css('left',left+'px');
+											
+										if(o.thumbRotation){
+											var angle 	= Math.floor(Math.random()*41)-20;
+											$this.css({
+												'-moz-transform'	: 'rotate('+ angle +'deg)',
+												'-webkit-transform'	: 'rotate('+ angle +'deg)',
+												'transform'			: 'rotate('+ angle +'deg)'
+											});
+										}
+										//hovering the thumbs animates them up and down
+										$this.bind('mouseenter',function(){
+											$(this).stop().animate({top:'-10px'},100);
+										}).bind('mouseleave',function(){
+											$(this).stop().animate({top:'0px'},100);
+										});
+									});
+										
+									//make the first thumb be selected
+									highlight($thumbs.eq(0));
+										
+									//slide when clicking the navigation buttons
+									$pxs_next.bind('click',function(){
+										++current;
+										if(current >= total_elems)
+											if(o.circular)
+												current = 0;
+										else{
+											--current;
+											return false;
+										}
+										highlight($thumbs.eq(current));
+										slide(current,
+										$pxs_slider,
+										$pxs_bg3,
+										$pxs_bg2,
+										$pxs_bg1,
+										o.speed,
+										o.easing,
+										o.easingBg);
+									});
+									$pxs_prev.bind('click',function(){
+										--current;
+										if(current < 0)
+											if(o.circular)
+												current = total_elems - 1;
+										else{
+											++current;
+											return false;
+										}
+										highlight($thumbs.eq(current));
+										slide(current,
+										$pxs_slider,
+										$pxs_bg3,
+										$pxs_bg2,
+										$pxs_bg1,
+										o.speed,
+										o.easing,
+										o.easingBg);
+									});
+							
+									/*
+									clicking a thumb will slide to the respective image
+									 */
+									$thumbs.bind('click',function(){
+										var $thumb	= $(this);
+										highlight($thumb);
+										//if autoplay interrupt when user clicks
+										if(o.auto)
+											clearInterval(slideshow);
+										current 	= $thumb.index();
+										slide(current,
+										$pxs_slider,
+										$pxs_bg3,
+										$pxs_bg2,
+										$pxs_bg1,
+										o.speed,
+										o.easing,
+										o.easingBg);
+									});
+							
+								
+							
+									/*
+									activate the autoplay mode if
+									that option was specified
+									 */
+									if(o.auto != 0){
+										o.circular	= true;
+										slideshow	= setInterval(function(){
+											$pxs_next.trigger('click');
+										},o.auto);
+									}
+							
+									/*
+									when resizing the window,
+									we need to recalculate the widths of the
+									slider elements, based on the new windows width.
+									we need to slide again to the current one,
+									since the left of the slider is no longer correct
+									 */
+									$(window).resize(function(){
+										w_w	= $(window).width();
+										setWidths($pxs_slider,$elems,total_elems,$pxs_bg1,$pxs_bg2,$pxs_bg3,one_image_w,$pxs_next,$pxs_prev);
+										slide(current,
+										$pxs_slider,
+										$pxs_bg3,
+										$pxs_bg2,
+										$pxs_bg1,
+										1,
+										o.easing,
+										o.easingBg);
+									});
+
+								}
+							}).error(function(){
+								alert('here')
+							}).attr('src',$img.attr('src'));
+						});
+							
+							
+							
+					});
+				};
+				
+				//the current windows width
+				var w_w				= $(window).width();
+				
+				var slide			= function(current,
+				$pxs_slider,
+				$pxs_bg3,
+				$pxs_bg2,
+				$pxs_bg1,
+				speed,
+				easing,
+				easingBg){
+					var slide_to	= parseInt(-w_w * current);
+					$pxs_slider.stop().animate({
+						left	: slide_to + 'px'
+					},speed, easing);
+					$pxs_bg3.stop().animate({
+						left	: slide_to/2 + 'px'
+					},speed, easingBg);
+					$pxs_bg2.stop().animate({
+						left	: slide_to/4 + 'px'
+					},speed, easingBg);
+					$pxs_bg1.stop().animate({
+						left	: slide_to/8 + 'px'
+					},speed, easingBg);
+				}
+				
+				var highlight		= function($elem){
+					$elem.siblings().removeClass('selected');
+					$elem.addClass('selected');
+				}
+				
+				var setWidths		= function($pxs_slider,
+				$elems,
+				total_elems,
+				$pxs_bg1,
+				$pxs_bg2,
+				$pxs_bg3,
+				one_image_w,
+				$pxs_next,
+				$pxs_prev){
+					/*
+					the width of the slider is the windows width
+					times the total number of elements in the slider
+					 */
+					var pxs_slider_w	= w_w * total_elems;
+					$pxs_slider.width(pxs_slider_w + 'px');
+					//each element will have a width = windows width
+					$elems.width(w_w + 'px');
+					/*
+					we also set the width of each bg image div.
+					The value is the same calculated for the pxs_slider
+					 */
+					$pxs_bg1.width(pxs_slider_w + 'px');
+					$pxs_bg2.width(pxs_slider_w + 'px');
+					$pxs_bg3.width(pxs_slider_w + 'px');
+					
+					/*
+					both the right and left of the
+					navigation next and previous buttons will be:
+					windowWidth/2 - imgWidth/2 + some margin (not to touch the image borders)
+					 */
+					var position_nav	= w_w/2 - one_image_w/2 + 3;
+					$pxs_next.css('right', position_nav + 'px');
+					$pxs_prev.css('left', position_nav + 'px');
+				}
+				
+				$.fn.parallaxSlider.defaults = {
+					auto			: 0,	//how many seconds to periodically slide the content.
+											//If set to 0 then autoplay is turned off.
+					speed			: 1000,//speed of each slide animation
+					easing			: 'jswing',//easing effect for the slide animation
+					easingBg		: 'jswing',//easing effect for the background animation
+					circular		: true,//circular slider
+					thumbRotation	: true//the thumbs will be randomly rotated
+				};
+				//easeInOutExpo,easeInBack
+			})(jQuery);
+		</script>
+
+		<script type="text/javascript">
+			$(function() {
+				var $pxs_container	= $('#pxs_container');
+				$pxs_container.parallaxSlider();
+			});
+        </script>
+		<script src="./Parallax Slider - 视差滚动滑块_files/init.js"></script>
+    
+</body></html>
